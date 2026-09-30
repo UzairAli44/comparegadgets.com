@@ -1,0 +1,13 @@
+{
+  "name": "@comparegadgetshub/pricing-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Landed-cost engine: what a gadget really costs a buyer, in their currency, from any country.",
+  "main": "src/index.ts",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "demo": "node src/demo.ts"
+  }
+}
