@@ -156,6 +156,8 @@ monthly and on budget days.
 ## 6. Key features by phase
 
 ### Phase 1 — MVP (6–8 weeks)
+> **Superseded by [`PRODUCT-SPEC.md`](PRODUCT-SPEC.md):** v1 launches in Pakistan only, covers phones and laptops, has Local and Global modes, and a 2-developer stack.
+
 - About **30 flagship products** (iPhone, Galaxy S/Z, Pixel, MacBook Air/Pro, iPad, AirPods, PS5, Switch 2)
   across about **25 countries** (US, CA, UK, DE, FR, IT, ES, NL, JP, KR, SG, HK, MY, TH, AE, SA, IN, PK, TR,
   AU, NZ, BR, MX, CN, CH).
