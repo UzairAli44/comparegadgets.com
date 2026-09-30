@@ -6,6 +6,7 @@ refunds, import duty, shipping and card fees included.
 - [`docs/PRODUCT-SPEC.md`](docs/PRODUCT-SPEC.md): MVP v1 product spec (Pakistan launch, phones + laptops, local and global modes)
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md): system design, tech stack, data model and roadmap
 - [`docs/BUSINESS-POTENTIAL.md`](docs/BUSINESS-POTENTIAL.md): market, competition, monetisation and risks
+- [`apps/web`](apps/web): the website (Next.js), deployed on Vercel. See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)
 - [`packages/pricing-engine`](packages/pricing-engine): working prototype of the landed-cost engine
 
 ## Try the engine
