@@ -29,3 +29,18 @@ cd apps/web
 npm install
 npm run dev   # http://localhost:3000
 ```
+
+## Environment variables (Vercel → Settings → Environment Variables)
+
+| Name | Required | Purpose |
+|---|---|---|
+| `REPORTS_WEBHOOK_URL` | To accept price reports | `/api/reports` POSTs each validated report here as `multipart/form-data` (fields + the photo). Any webhook receiver works: Zapier/Make, Google Apps Script, or the future admin API. |
+| `CONTACT_WEBHOOK_URL` | To accept contact messages | `/api/contact` POSTs each validated message here as JSON. |
+
+Without these, both forms validate input but reply "Submissions aren't switched on yet" (HTTP 503), and nothing is lost silently.
+Redeploy after adding or changing a variable.
+
+## Before switching to live data
+- `apps/web/lib/catalog/data.ts` is **sample data** (`DATA_STATUS.isSample = true` shows the preview banner).
+  Re-implement `apps/web/lib/catalog/index.ts` against the real database/API; pages only call that module.
+- Add bot protection (e.g. Cloudflare Turnstile) and rate limiting to `/api/reports` and `/api/contact` before promoting the forms.
